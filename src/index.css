@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-bloom-cream: #faf6f1;
+  --color-bloom-blush: #f2c4ce;
+  --color-bloom-rose: #d4708a;
+  --color-bloom-deep: #9c3f5d;
+  --color-bloom-sage: #7d9b76;
+  --color-bloom-sage-light: #b5c9b1;
+  --color-bloom-bark: #5c3d2e;
+  --color-bloom-sand: #e8ddd3;
+  --color-bloom-mist: #f7f0ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #faf6f1;
+  color: #2d1f1f;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', serif;
+}
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4708a40;
+  border-radius: 3px;
+}
+
+.hero-image {
+  background-image: url('https://images.unsplash.com/photo-1533793241176-a270e75ef2ad?w=1200&h=900&fit=crop&auto=format');
+  background-size: cover;
+  background-position: center;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

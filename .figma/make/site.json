@@ -1,0 +1,10 @@
+{
+  "description": "Discover a premium online flower shop offering fresh bouquets and custom arrangements for every occasion, with seamless shopping and delivery options.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
